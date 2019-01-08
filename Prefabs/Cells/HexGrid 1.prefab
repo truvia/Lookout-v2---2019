@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1361184303497740}
+  m_IsPrefabParent: 1
+--- !u!1 &1361184303497740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4694111428487442}
+  - component: {fileID: 114427163125690996}
+  - component: {fileID: 114871887355225306}
+  m_Layer: 0
+  m_Name: HexGrid 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4694111428487442
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1361184303497740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114427163125690996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1361184303497740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054e0e4c5ee2e5b498606670d22ef52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkCountX: 4
+  chunkCountZ: 3
+  chunkPrefab: {fileID: 114093709014356838, guid: a41d9e115cd94d947b5b46d602bbf25f,
+    type: 2}
+  chunks: []
+  cellPrefab: {fileID: 114646254017688554, guid: a6bb960e38384da40b4255ee36ec1682,
+    type: 2}
+  cellLabelPrefab: {fileID: 114558845051989624, guid: 49efd2755badd07478ef9f47eb50a642,
+    type: 2}
+  noiseSource: {fileID: 2800000, guid: e5bcfc8178886f640aa2e208f3f86b05, type: 3}
+  showCoordinates: 1
+  cells: []
+  highlightRouteColor: {r: 0, g: 0.9632353, b: 0.88351923, a: 0}
+  routeOutOfRangeColor: {r: 1, g: 0, b: 0, a: 0}
+  seed: 1234
+--- !u!114 &114871887355225306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1361184303497740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154d80b9eef4f3f409991b055656697d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardManager: {fileID: 0}
+  uiManager: {fileID: 0}
+  unitHUDUIManager: {fileID: 0}
+  fogOfWarManager: {fileID: 0}
+  unitMount: {fileID: 1744749652831616, guid: 6778dfb8bfd3d0b4289f15b731ee8339, type: 2}
+  selectedUnitGameobject: {fileID: 0}
+  pointerArrow: {fileID: 0}
